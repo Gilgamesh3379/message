@@ -5,3 +5,6 @@ router = DefaultRouter()
 router.register('chatroom', ChatRoomViewSets, basename='chatroom')
 router.register('message', MessageViewSets, basename='message')
 urlpatterns = router.urls
+urlpatterns += [
+    path('sum_numbers/', sumNumbersView, name='sum_numbers'),
+]
