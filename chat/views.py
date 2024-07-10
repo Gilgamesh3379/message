@@ -20,3 +20,18 @@ def sumNumbersView(request):
         end_num = request.data['end_num']
         result = sumNumbers(start_num, end_num)
         return Response({'result': result})
+
+# def sorting_number(number_list):
+#     sorted_list = []
+#     while number_list:
+#
+#         min_number = min(number_list)
+#         sorted_list.append(min_number)
+#         number_list.remove(min_number)
+#     return sorted_list
+#
+# def add_numbers(number_list):
+#     sum = 0
+#     for number in number_list:
+#         sum += number
+#     return sum
